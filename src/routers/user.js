@@ -26,7 +26,7 @@ const upload = multer({
 
 
 
-router.get('/users/me', auth, async (req, res) => { //search all USERS
+router.get('/users/me', auth, async (req, res) => { //search USER
     res.send(req.user) //req.user returned from auth() 'auth.js'
 })
 
