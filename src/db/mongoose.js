@@ -5,6 +5,12 @@ mongoose.connect(process.env.MONGODB_URL, {
     useCreateIndex: true
 })
 
+//verify connection
+// mongoose.connection.once('open', function () {
+//     console.log('Conection has been made!');
+// }).on('error', function (error) {
+//     console.log('Error is: ', error);
+// });
 
 
 // const me = new User({
